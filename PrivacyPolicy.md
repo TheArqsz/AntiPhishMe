@@ -26,3 +26,13 @@ The Algorithm consists of:
 - safebrowsing's verification
 - who.is verification (domain age)
 - crt.sh verification (cert's age)
+
+### Remote services
+
+The Extension connects to remote services listed below to determine URL's/domain's/IP's status:
+- https://urlscan.io
+- https://safebrowsing.google.com/
+- https://hole.cert.pl/domains/domains.txt
+- https://who.is/
+- https://crt.sh/
+- http://ip-api.com
