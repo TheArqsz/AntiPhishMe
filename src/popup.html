@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="tile">
+      <img src="img/STOP.png" alt="" id="switcher">
+    </div>
+    <img src="img/icon128.png" width="72" alt="" id="logo">
+    <div class="tile">
+      <img src="img/report.png" alt="" id="raport">
+    </div>
+  </div>
+  <div id="active">
+    <hr>
+
+    <div class="domain_name">
+      <span class="domain_text"><strong><span class="domain_hostname">domain.name</span></strong> seems to
+        be:</span></br>
+      <strong><span class="domain_result" id="result">scanning</span></strong>
+    </div>
+    <div id="scan">
+      <hr>
+
+      <div class="ip_check">
+        Domain IP: <span class="ip_domain">stale</span></br>
+        <span class="ip_question">Not Sure?</span>
+      </div>
+      <div class="btn_center">
+        <div class="btn_scan" onclick="scanning(true)">
+          <span class="btn_text">SCAN</span>
+        </div>
+        <img src="img/gifg.gif" alt="gif" class="gif">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

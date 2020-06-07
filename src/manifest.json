@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "AntiPhishMe",
+  "description": "This extension will analyze whether opened URL is a phishing or not",
+  "version": "1.15",
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "128": "img/icon128G.png"
+  },
+  "browser_action": {
+   "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["jquery-3.5.1.min.js","background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-3.5.1.min.js","script.js"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+ ]
+}

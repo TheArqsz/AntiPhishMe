@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    src: url('../fonts/Roboto.woff2') format('woff2');
+}
+
+body {
+    background: #424242;
+    margin: 10px;
+    font-family: 'Roboto';
+    letter-spacing: 0.05em;
+}
+
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.tile {
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #484848;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+}
+
+.tile img {
+    display: block;
+    cursor: pointer;
+}
+
+hr {
+    margin: 10px 0;
+    border: 1px solid #303030;
+}
+
+.domain_name {
+    font-size: 16px;
+    text-align: center;
+}
+
+.domain_text {
+    color: #fff;
+}
+
+.domain_result {
+    color: #a5a5a5;
+}
+
+.ip_check {
+    text-align: center;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.ip_info {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#scan{
+    display: none;
+}
+
+.ip_question {
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.btn_center {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn_scan {
+    display: inline-block;
+    padding: 29px 45px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    background: linear-gradient(0deg, rgba(55, 153, 48, 1) 0%, rgba(111, 242, 91, 1) 100%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_text {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.65);
+    display: block;
+}
+
+.gif {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+}

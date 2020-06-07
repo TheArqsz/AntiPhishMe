@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="img/icon16G.png" />
+  <link rel="stylesheet" href="raport.css">
+  <script src="raport.js"></script>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <img src="img/LogoG.png" alt="logo" id="logo" style="width: 15%">
+  </div>
+  <div class="header">
+    Raport dla domeny<br />
+    <span id="domain"></span>
+  </div>
+  <div class="table">
+    <div class="table_header">
+      Szczegóły domeny
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Adres IP</td>
+          <td id="ip"></td>
+        </tr>
+        <tr>
+          <td>Kraj</td>
+          <td id="country"></td>
+        </tr>
+        <tr>
+          <td>ASN</td>
+          <td id="asn"></td>
+        </tr>
+        <tr>
+          <td>Data utworzenia</td>
+          <td id="creation_date"></td>
+        </tr>
+        <tr>
+          <td>Nazwa firmy</td>
+          <td id="company"></td>
+        </tr>
+        <tr>
+          <td>Organizacja</td>
+          <td id="organisation"></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 2px solid #ccc;">Zarejestrowany przez</td>
+          <td id="registration" style="border-bottom: 2px solid #ccc;"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table">
+    <table>
+      <tbody>
+        <tr>
+          <td style="text-align: center;"><strong>Źródło danych</strong></td>
+          <td style="text-align: center;"><strong>Werdykt</strong></td>
+        </tr>
+        <tr>
+          <td>crt.sh</td>
+          <td id="verify_crtsh"></td>
+        </tr>
+        <tr>
+          <td>Safebrowsing</td>
+          <td id="verify_sfbrowsing"></td>
+        </tr>
+        <tr>
+          <td>Urlscan.io</td>
+          <td id="verify_urlscan"></td>
+        </tr>
+        <tr>
+          <td>who.is</td>
+          <td id="verify_whois"></td>
+        </tr>
+        <tr>
+          <td>Entropia</td>
+          <td id="verify_entropy"></td>
+        </tr>
+        <tr>
+          <td>hole.cert.pl</td>
+          <td id="verify_cert_hole"></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 2px solid #ccc;">Levenstein</td>
+          <td id="verify_levenstein" style="border-bottom: 2px solid #ccc;"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table" id="crtsh">
+    <div class="table_header">
+      crt.sh
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td>ID certyfikatu</td>
+          <td id="caid"></td>
+        </tr>
+        <tr>
+          <td>Data utworzenia certyfikatu</td>
+          <td id="ca_register"></td>
+        </tr>
+        <tr>
+          <td>Wystawca certyfikatu</td>
+          <td id="exhibitor"></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 2px solid #ccc;">Ilość domen zarejestrowanych na certyfikat</td>
+          <td id="multi_dns_amount" style="border-bottom: 2px solid #ccc;"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table">
+    <div class="table_header">
+      urlscan.io
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Nazwa serwera</td>
+          <td id="server"></td>
+        </tr>
+        <tr>
+          <td>Podłączone aplikacje</td>
+          <td id="webapps"></td>
+        </tr>
+        <tr>
+          <td>Liczba wysłanych zapytań po wejściu na stronę</td>
+          <td id="no_of_requests"></td>
+        </tr>
+        <tr>
+          <td>Liczba zablokowanych reklam</td>
+          <td id="ads_blocked"></td>
+        </tr>
+        <tr>
+          <td>Procent zapytań IPv6</td>
+          <td id="ipv6_request"></td>
+        </tr>
+        <tr>
+          <td>Procent zapytań HTTPS</td>
+          <td id="https_requests"></td>
+        </tr>
+        <tr>
+          <td>Liczba krajów, które były odpytywane</td>
+          <td id="unique_country_count"></td>
+        </tr>
+        <tr>
+          <td>Kraje, do których były kierowane zapytania</td>
+          <td id="country_request"></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 2px solid #ccc;">Liczba szkodliwych zapytań</td>
+          <td id="malicious_request" style="border-bottom: 2px solid #ccc;"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table">
+    <div class="table_header">
+      inne
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Entropia</td>
+          <td id="entropy"></td>
+        </tr>
+        <tr id="ipv6">
+          <td>Znalezione słowo</td>
+          <td id="matched_keyword"></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 2px solid #ccc;">Odległość Levensteina</td>
+          <td id="levenstein_distance" style="border-bottom: 2px solid #ccc;"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>
